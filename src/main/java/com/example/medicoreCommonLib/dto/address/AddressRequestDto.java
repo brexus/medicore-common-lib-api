@@ -1,8 +1,6 @@
 package com.example.medicoreCommonLib.dto.address;
 
-
 import com.example.medicoreCommonLib.constant.ValidationConstants;
-import com.example.medicoreCommonLib.dto.BaseDto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -14,7 +12,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AddressRequestDto extends BaseDto {
+public class AddressRequestDto {
 
     @Size(max = ValidationConstants.STREET_MAX_LENGTH, message = "Street name must be at most 100 characters")
     private String street;
