@@ -1,30 +1,20 @@
 package com.example.medicoreCommonLib.dto.visit;
 
 import com.example.medicoreCommonLib.enums.VisitStatusEnum;
-import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 
 @Data
-@Builder
+@SuperBuilder
 @NoArgsConstructor
 @AllArgsConstructor
-public class VisitRequestDto {
-    @NotNull(message = "Patient ID is required")
-    private Long patientId;
-
-    private Long doctorId;
-
-    @NotNull(message = "Visit date is required")
+public class VisitShortSummaryDto {
+    private Long id;
     private LocalDateTime visitDate;
-
-    @NotNull(message = "Status is required")
+    private String doctorFullName;
     private VisitStatusEnum status;
-
-    private String reason;
-
 }

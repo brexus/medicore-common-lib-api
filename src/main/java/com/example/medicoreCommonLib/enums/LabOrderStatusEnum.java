@@ -4,6 +4,6 @@ public enum LabOrderStatusEnum {
     ORDERED,
     IN_PROGRESS,
     COMPLETED,
-    CANCELLED,
+    CANCELED,
     REJECTED
 }
