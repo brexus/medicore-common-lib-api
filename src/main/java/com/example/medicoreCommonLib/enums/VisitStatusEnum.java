@@ -2,7 +2,7 @@ package com.example.medicoreCommonLib.enums;
 
 public enum VisitStatusEnum {
     SCHEDULED,
+    IN_PROGRESS,
     COMPLETED,
-    CANCELLED,
-    NO_SHOW
+    CANCELED
 }

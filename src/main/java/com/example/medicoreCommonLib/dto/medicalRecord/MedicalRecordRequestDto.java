@@ -1,6 +1,5 @@
 package com.example.medicoreCommonLib.dto.medicalRecord;
 
-import com.example.medicoreCommonLib.dto.visit.VisitRequestDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,10 +10,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MedicalRecordRequestDto {
-    private Long visitId;
     private String symptoms;
     private String physicalExamination;
     private String diagnosis;
     private String recommendations;
+    private Long visitId;
 
 }
